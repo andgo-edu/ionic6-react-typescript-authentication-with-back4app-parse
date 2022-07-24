@@ -1,0 +1,16 @@
+.ion__input{
+    padding: 1rem 1rem ;
+    background-color: ghostwhite;
+    color: teal;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+
+.ion__input:hover{
+    padding: 1rem 1rem ;
+    background-color: teal;
+    color:white;
+    border-radius: 8px;
+    transform: scale(1.02);
+    
+}
