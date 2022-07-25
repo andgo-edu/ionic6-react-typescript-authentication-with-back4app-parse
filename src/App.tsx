@@ -32,6 +32,7 @@ Parse.serverURL = PARSE_HOST_URL;
 setupIonicReact();
 
 const App: React.FC = () => (
+  //Map the current user state here so do you dont have to mention it multiple times
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>

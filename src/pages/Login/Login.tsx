@@ -38,6 +38,8 @@ const Login = () => {
     }
   };
 
+  // Login Pt 2
+
   return (
     <IonPage>
       <IonContent fullscreen>
