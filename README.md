@@ -60,6 +60,16 @@
 
 
 
+#### Part 3 getCurrentUser
+
+1. Add API Keys in a new .env for security 
+```
+TYPESCRIPT_PARSE_ENCRYPTED_SECRET=
+PARSE_APPLICATION_ID=
+PARSE_HOST_URL = 
+PARSE_JAVASCRIPT_KEY = 
+
+```
 
 
 
