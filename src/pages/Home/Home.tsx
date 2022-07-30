@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonText>
-          Test For Login 
+         Home Page
         </IonText>
       </IonContent>
     </IonPage>
