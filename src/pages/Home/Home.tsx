@@ -1,10 +1,16 @@
 import {
   IonButton,
+  IonCol,
   IonContent,
+  IonGrid,
   IonHeader,
   IonIcon,
+  IonInput,
+  IonLabel,
   IonPage,
+  IonRow,
   IonText,
+  IonTextarea,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
@@ -13,23 +19,52 @@ import { useHistory } from "react-router";
 //import ExploreContainer from '../../components/ExploreContainer';
 import "./Home.css";
 
-import { logOutOutline } from "ionicons/icons";
+import { add,  logOutOutline } from "ionicons/icons";
 
 const Parse = require("parse");
 
 const Home: React.FC = () => {
   const history = useHistory();
-
-  //1. getCurrentUser -> object for the currentUser
-  //2. history , useHistory from react-router-dom v5 -
-  //3. checkfor the current User utilizing an async function and utilzing useEffect for
-
-  // getCurrentUser Async function start
-  //PT3 get Current User
-  //TASKS
-
-  //setCurrent user as an object , user acts like an object in back4app
+  // Set State Variable and the State Action
   const [currentUser, setCurrentUser] = useState<Parse.Object | null>(null);
+  //setCurrent user as an object , user acts like an object in back4app
+  const [newToDoObject, setNewToDoObject] = useState({
+    ToDo: {
+      title: "",
+      description: "",
+      task: "",
+      timeCreated: new Date(),
+      updatedAt: new Date(),
+    },
+  });
+
+
+//1. 
+  const createNewToDo = async function () {
+    // ToDo is a classname in your back4app db
+    const newToDoParseObj = new Parse.Object("ToDo", newToDoObject);
+    newToDoParseObj.set({
+      ToDo: {
+        title: "",
+        description: "",
+        task: "",
+        timeCreated: new Date(),
+        updatedAt: new Date(),
+      },
+    })
+
+    //console.log(newToDoParseObj);
+    console.log(newToDoObject);
+  };
+
+ const handleNewToDoChange = (event : any) => {
+  setNewToDoObject((previous)=> ({
+    ...previous,
+    [event.target.name]: event.target.value, 
+
+  }))
+ }
+ 
   //Debug current user state
   //console.log(currentUser);
 
@@ -84,18 +119,57 @@ const Home: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonText>Home Page</IonText>
+        <IonGrid>
+          <IonRow>
+            <IonCol size="6">
+              <IonLabel>Title</IonLabel>
+              {/*//key value for passing the props and knowing which props to pass */}
+              <IonInput
+                name="title"
+                placeholder="Title.."
+                type="text"
+                className="home__app-input"
+                onIonChange={handleNewToDoChange}
+              />
+            </IonCol>
+            <IonCol size="6">
+              <IonLabel>Task</IonLabel>
+
+              <IonInput
+                name="task"
+                placeholder="Task.."
+                type="text"
+                className="home__app-input"
+                onIonChange={handleNewToDoChange}
+              />
+            </IonCol>
+            <IonCol size="9">
+              <IonLabel>Description</IonLabel>
+
+              <IonTextarea
+                name="decription"
+                placeholder="Description.."
+                className="home__app-textarea"
+                onIonChange={handleNewToDoChange}
+              ></IonTextarea>
+            </IonCol>
+            <IonCol size="3">
+              <IonButton onClick={createNewToDo} color={"success"} expand="block">
+              
+              <IonIcon
+              icon={add}
+              />
+
+              </IonButton>
+            </IonCol>
+          </IonRow>
+        </IonGrid>
         <IonButton onClick={handleLogOut} color={"danger"} expand="block">
           <IonIcon icon={logOutOutline} />
           LogOut

@@ -77,6 +77,14 @@
 //utilizng a checkCurrentUser async function that is going to check if the currentUser is empty or not
 - passing the function into a useEffect and calling it inside the useEffect .[✔️]
 
+### PT3 III - References
+1. [react-slack-clone-app-Back4AppDocs](http://docs2.back4app.com/docs/react/templates/react-slack-clone-app)
+2. [react-routerdom - api Hooks - useHistory V5](https://reactrouter.com/docs/en/v6/upgrading/v5)
+3. [react-routerdom - api Hooks - useNavigate V6](https://reactrouter.com/docs/en/v6/upgrading/v5)
+4. [asyncstorage](https://reactnative.dev/docs/asyncstorage)
+5. [working-with-users/react-login -Back4App Docs](https://www.back4app.com/docs/react/working-with-users/react-login)
+
+
 
 
 ### ART WORK 
