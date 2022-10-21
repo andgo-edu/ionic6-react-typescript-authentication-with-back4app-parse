@@ -1,4 +1,4 @@
-# Ionic React TypeScript Full Stack Course 
+# Ionic React TypeScript Authentication Course
 
 1. Requirements 
    
