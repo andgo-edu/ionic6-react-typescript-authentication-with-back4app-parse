@@ -15,13 +15,14 @@ The authentication part of the ToDo Application
    
  - Signup at [back4app](https://www.back4app.com)
  - Update API Keys in App.tsx 
- -  
-   ```
-    const PARSE_APPLICATION_ID = "";
-    const PARSE_HOST_URL = "https://parseapi.back4app.com/";
-    const PARSE_JAVASCRIPT_KEY = "";
-   ```
--
+  
+ ```
+ const PARSE_APPLICATION_ID = "";
+ const PARSE_HOST_URL = "https://parseapi.back4app.com/";
+ const PARSE_JAVASCRIPT_KEY = "";
+ 
+ ```
+
 
 
 ### Start By 🚀
