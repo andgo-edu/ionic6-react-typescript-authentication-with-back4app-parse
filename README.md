@@ -1,12 +1,19 @@
 # Ionic React TypeScript Authentication Course
 
-<a href="/https://ionic-6-ts-back4app-todolist-andgoedu.netlify.app/">DEMO</a>
+## About
+
+The authentication part of the ToDo Application 
+<a href="https://github.com/andgo-edu/ionic6-react-typescript-authentication-with-back4app-parse">CRUD Part of Application </a>
+
+
+<a href="https://ionic-6-ts-back4app-todolist-andgoedu.netlify.app">Demo</a>
+
 1. Requirements 
    
 
 2. To start using this application 
    
- - Signup at [](https://www.back4app.com)
+ - Signup at [back4app](https://www.back4app.com)
  - Update API Keys in App.tsx 
  -  
    ```
@@ -14,7 +21,18 @@
     const PARSE_HOST_URL = "https://parseapi.back4app.com/";
     const PARSE_JAVASCRIPT_KEY = "";
    ```
+-
 
+
+### Start By 🚀
+
+```
+yarn install
+```
+
+```
+ionic serve
+```
 
 ## Tasks Done 
 #### Part 1 Setting up the project and register page
