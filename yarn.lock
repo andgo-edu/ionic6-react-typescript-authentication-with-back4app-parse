@@ -6843,10 +6843,10 @@ parse5@6.0.1:
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
   integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
 
-parse@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/parse/-/parse-3.4.3.tgz#7196bfe98ed59111259c9d1e0135c7127f77ea0e"
-  integrity sha512-ZfpWQIaa+tui6Ra77jGmWeMOIeqKKAS60c1wRCQeeTOlZ7lOSeWZhoAsjkK3g9njnVXj6GL6Mgv9hl6GkCNR9A==
+parse@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/parse/-/parse-3.5.1.tgz#16c1d5ff9d541a500000b2ac1a71e73ab8fba4c0"
+  integrity sha512-uxkLVNfbqgZ/pStg/jIQGh09tOUkPZorzDIqz9vSFjZ3iIZzgvNk6VBbjXjcMWsR8LyFPOR1ROR6/y9Dedn3/w==
   dependencies:
     "@babel/runtime" "7.18.0"
     "@babel/runtime-corejs3" "7.17.8"
